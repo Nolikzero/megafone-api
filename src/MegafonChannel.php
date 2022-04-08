@@ -55,7 +55,7 @@ class MegafonChannel
         }
 
         $params = [
-            'to'  => $recipients,
+            'to'  => (int) $recipients,
             'message' => $message->content,
             'sender'  => $message->from,
             //'callback_url' => ''

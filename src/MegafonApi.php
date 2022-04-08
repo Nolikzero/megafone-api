@@ -28,8 +28,8 @@ class MegafonApi
             'timeout' => 5,
             'connect_timeout' => 5,
             'headers' => [
-                'Authorization' => 'Basic ' . base64_encode($login . ':' . $password)
-            ]
+                'Authorization' => 'Basic ' . base64_encode($login . ':' . $password),
+            ],
         ]);
     }
 
@@ -42,7 +42,7 @@ class MegafonApi
         $params = \array_merge($base, \array_filter($params));
 
         try {
-            $response = $this->client->request('POST', $this->endpoint, ['form_params' => $params]);
+            $response = $this->client->request('POST', $this->endpoint, ['json' => $params]);
             $response = \json_decode((string) $response->getBody(), true);
 
             if (!empty($code = $response['result']['status']['code'])) {
