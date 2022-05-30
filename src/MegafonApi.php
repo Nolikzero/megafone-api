@@ -25,8 +25,8 @@ class MegafonApi
         $this->endpoint = Arr::get($config, 'host', 'https://a2p-api.megalabs.ru/').'sms/v1/sms';
 
         $this->client = new HttpClient([
-            'timeout' => 5,
-            'connect_timeout' => 5,
+            'timeout' => 50,
+            'connect_timeout' => 50,
             'headers' => [
                 'Authorization' => 'Basic ' . base64_encode($login . ':' . $password),
             ],
