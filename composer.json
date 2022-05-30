@@ -2,7 +2,7 @@
     "name": "meshgroup/megafon-notification-channel",
     "type": "library",
     "license": "MIT",
-    "version": "v1.0.6",
+    "version": "v1.0.7",
     "autoload": {
         "psr-4": {
             "Meshgroup\\Megafon\\": "src/"
