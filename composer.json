@@ -2,7 +2,7 @@
     "name": "meshgroup/megafon-notification-channel",
     "type": "library",
     "license": "MIT",
-    "version": "v1.0.7",
+    "version": "v1.0.8",
     "autoload": {
         "psr-4": {
             "Meshgroup\\Megafon\\": "src/"
@@ -16,10 +16,10 @@
     "require": {
         "php": ">=5.6.4",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.2",
-        "illuminate/queue": "5.1 - 5.8",
-        "illuminate/notifications": "5.1 - 5.8",
-        "illuminate/support": "5.1 - 5.8"
+        "guzzlehttp/guzzle": "^7.4.5",
+        "illuminate/queue": "5.1 - 8.9",
+        "illuminate/notifications": "5.1 - 8.9",
+        "illuminate/support": "5.1 - 8.9"
     },
     "config": {
         "sort-packages": true
